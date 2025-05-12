@@ -1,5 +1,7 @@
+import React from 'react';  // Fix: Import React
 import { useState } from 'react';
 import './App.css';
+
 
 function App() {
   const [thoughts,setThought] = useState('')
@@ -19,7 +21,7 @@ function DailyThought({ thoughts, setThought }) {
       const response = await fetch('http://localhost:4000/submit-thought', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ thought: thoughts }) //passing key value pair key is though value is thoughts
+        body: JSON.stringify({ thought: thoughts }) //passing key value pair key is though value is thoughts   
       });
   
   
