@@ -2,7 +2,7 @@ import React, { use } from 'react';  // Fix: Import React
 import { useState } from 'react';
 import './App.css';
 
-
+// feedback at bottom ensures its true
 function App() {
 
   const [thoughts,setThought] = useState('')
@@ -51,7 +51,7 @@ function DailyThought({ thoughts, setThought }) {
     <button>
       Submit!
     </button>
-
+    
     {feedback && (
         <div style={{ marginTop: '20px' }}>
           <label>Feedback from AI:</label>
