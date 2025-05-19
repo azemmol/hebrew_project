@@ -1,7 +1,8 @@
 import React, { use } from 'react';  // Fix: Import React
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
-
+//add table for new words and example sentence 
 // feedback at bottom ensures its true
 function App() {
 
